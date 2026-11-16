@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Salamat Medical Laboratory provides accurate and reliable laboratory testing services.">
+  <title>Salamat Medical Laboratory</title>
+  <style>
+    :root {
+      --primary: #0a7c86;
+      --primary-dark: #075c63;
+      --accent: #e8f6f7;
+      --text: #1f2d3a;
+      --muted: #5b6b78;
+      --bg: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      border-bottom: 1px solid #e3eaee;
+      z-index: 10;
+    }
+    nav {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .logo { font-weight: 700; font-size: 1.25rem; color: var(--primary-dark); text-decoration: none; }
+    nav ul { list-style: none; display: flex; gap: 20px; }
+    nav a { color: var(--text); text-decoration: none; font-size: 0.95rem; }
+    nav a:hover { color: var(--primary); }
+    .hero {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: #fff;
+      text-align: center;
+      padding: 96px 20px;
+    }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 16px; }
+    .hero p { font-size: 1.15rem; max-width: 640px; margin: 0 auto 28px; opacity: 0.95; }
+    .btn {
+      display: inline-block;
+      background: #fff;
+      color: var(--primary-dark);
+      padding: 12px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .btn:hover { background: var(--accent); }
+    section { padding: 72px 20px; }
+    section.alt { background: var(--accent); }
+    .container { max-width: 1000px; margin: 0 auto; }
+    h2 { font-size: 2rem; text-align: center; margin-bottom: 12px; color: var(--primary-dark); }
+    .subtitle { text-align: center; color: var(--muted); margin-bottom: 40px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: #fff;
+      padding: 28px 24px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+    .card h3 { color: var(--primary-dark); margin-bottom: 8px; font-size: 1.1rem; }
+    .card p { color: var(--muted); font-size: 0.95rem; }
+    .about-text { max-width: 720px; margin: 0 auto; text-align: center; color: var(--muted); font-size: 1.05rem; }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      text-align: center;
+    }
+    .contact-item strong { display: block; color: var(--primary-dark); margin-bottom: 6px; }
+    .contact-item span { color: var(--muted); }
+    footer {
+      background: var(--primary-dark);
+      color: #d9eef0;
+      text-align: center;
+      padding: 24px 20px;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 2rem; }
+      nav ul { gap: 14px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="#top" class="logo">Salamat Laboratory</a>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <h1>Salamat Medical Laboratory</h1>
+      <p>Accurate, reliable, and timely laboratory testing you can trust for better health decisions.</p>
+      <a href="#contact" class="btn">Contact Us</a>
+    </div>
+
+    <section id="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <p class="subtitle">Comprehensive diagnostic testing performed by experienced staff.</p>
+        <div class="grid">
+          <div class="card">
+            <h3>Blood Tests</h3>
+            <p>Complete blood count, blood chemistry, and other routine and specialized blood analyses.</p>
+          </div>
+          <div class="card">
+            <h3>Urinalysis</h3>
+            <p>Comprehensive urine examinations to support early detection and monitoring.</p>
+          </div>
+          <div class="card">
+            <h3>Microbiology</h3>
+            <p>Culture and sensitivity testing to identify infections and guide treatment.</p>
+          </div>
+          <div class="card">
+            <h3>Hormone Testing</h3>
+            <p>Accurate hormone level measurements for thyroid, reproductive, and metabolic health.</p>
+          </div>
+          <div class="card">
+            <h3>Health Checkups</h3>
+            <p>Routine screening packages designed for individuals, families, and employers.</p>
+          </div>
+          <div class="card">
+            <h3>Sample Collection</h3>
+            <p>Convenient and professional sample collection with care for your comfort and privacy.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="alt">
+      <div class="container">
+        <h2>About Us</h2>
+        <p class="subtitle">Quality, accuracy, and care in every result.</p>
+        <p class="about-text">
+          Salamat Medical Laboratory is dedicated to providing dependable diagnostic services to our community.
+          Our team follows strict quality control procedures and modern testing standards so that you and your
+          doctor can rely on every result we deliver. We value your time, your privacy, and your trust.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact & Hours</h2>
+        <p class="subtitle">We are here to help you.</p>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <strong>Address</strong>
+            <span>[Your street address, City, Country]</span>
+          </div>
+          <div class="contact-item">
+            <strong>Phone</strong>
+            <span>[+00 000 000 0000]</span>
+          </div>
+          <div class="contact-item">
+            <strong>Email</strong>
+            <span>[info@yourdomain.com]</span>
+          </div>
+          <div class="contact-item">
+            <strong>Working Hours</strong>
+            <span>Mon – Sat: 8:00 AM – 6:00 PM<br>Sun: Closed</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Salamat Medical Laboratory. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
